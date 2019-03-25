@@ -37,7 +37,7 @@ targets=tf.placeholder('float',name='Target')
 weight1=tf.Variable(tf.random_normal(shape=[11,3],stddev=0.1),name="Weight1")
 biases1=tf.Variable(tf.random_normal(shape=[3],stddev=0.1),name="Biases1")
 
-#this is for tensor board to anal;yse= data
+#this is for tensor board to analyse= data
 tf.summary.histogram("weight_1",weight1)
 
 hLayer=tf.matmul(inputs,weight1)
